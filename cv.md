@@ -6,7 +6,7 @@
 * discord: *Arheo#4306*
 
 **_Date of birth:_**
-05th April 1986.
+05th April 1987.
 
 **_Brief information about yourself:_**
 All my life I was interested in computers and IT. Just a few months ago, I realized that I wanted to study and develop in the direction of front-end website development. I easily mastered HTML, CSS, as well as the basics of JS. My personal qualities are: the desire and ability to learn quickly, a high level of efficiency, confident communication, teamwork.
