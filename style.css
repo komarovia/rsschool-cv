@@ -1,21 +1,118 @@
-* { box-sizing: border-box; }
-
-.container-wrapper { max-width: 100%; }
-
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.5;
+@font-face {
+font-family: Avenir Next;
+src: url(./fonts/AvenirNext-Regular.ttf);
 }
 
-strong,
-span { font-style: italic; }
+.container { max-width: 100%; }
 
-pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 16px;
+.container__wrapper {
+  max-width: 595px;
+  height: 842px;
+  margin: 0 auto;
+  display: flex;
+  font-family: Avenir Next, sans-serif;
+}
+
+.column__left {
+flex: 0 1 395px;
+}
+
+.column__right {
+flex: 0 1 200px;
+background-color: #1C2532;
+}
+
+.header {
+  margin-top: 3em;
+  margin-left: 1.563em;
+}
+
+.name {
+  font-size: 2.250em;
+color: #1A1B1D;
+}
+
+.title {
+  font-size: 0.750em;
+color: #828B99;
+}
+
+.section {
+  margin-top: 1.875em;
+  margin-left: 1.563em;
+  width: 345px;
+  border-top: 0.5px solid #C8D1DD;
+}
+
+.section__header {
+font-size: 0.9em;
+line-height: 229%;
+color: #1A1B1D;
+}
+
+.section__description {
+  font-size: 0.6em;
+line-height: 156%;
+color: #1A1B1D;
+text-align: justify;
+}
+
+.section__description-institution {
+  flex: 0 1 147px;
+}
+
+.section__description span {
+  font-size: 0.9em;
+line-height: 150%;
+color: #828B99;
+}
+
+.section__description-dot {
+  flex: 0 1 5px;
+  height: 5px;
+  margin-top: 5px;
+  background: #1A1B1D;
+  border-radius: 50px;
+}
+
+.section__description-specialty {
+  flex: 0 1 153px;
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__wrapper {
+  flex: 0 1 165px;
+  display: flex;
+  align-items: center;
+}
+
+.section__link {
+  margin-left: 8px;
+  font-size: 0.6em;
+line-height: 267%;
+color: #828B99;
+}
+
+.section__link span {
+  color: #1A1B1D;
+}
+
+.code__example {
+  font-size: 0.6em;
+  line-height: 156%;
+  color: #1A1B1D;
   background-color: #f8f8f8;
+}
+
+.avatar__container {
+  margin: 32px auto 0 auto;
+  width: 112px;
+  height: 115px;
+  border: solid 2px #fff;
+  border-radius: 100px;
+  background: url(./img/avatar.jpg) 50% 95% no-repeat;
 }
