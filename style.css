@@ -11,62 +11,59 @@ body {
 
 .container__wrapper {
   max-width: 595px;
-  height: 842px;
+  height: 725px;
   margin: 0 auto;
   display: flex;
 }
 
-.column__left {
-flex: 0 1 395px;
-}
+.column__left { flex: 0 1 395px; }
 
 .column__right {
-flex: 0 1 200px;
-background-color: #1C2532;
+  flex: 0 1 200px;
+  background-color: #1C2532;
+  position: relative;
 }
 
 .header {
-  margin-top: 3em;
+  margin-top: 48px;
   margin-left: 1.563em;
 }
 
 .name {
   font-size: 2.250em;
-color: #1A1B1D;
+  color: #1A1B1D;
 }
 
 .title {
   font-size: 0.750em;
-color: #828B99;
+  color: #828B99;
 }
 
 .section {
-  margin: 1.875em auto 0 auto;
+  margin: 10px auto 0 auto;
   width: 345px;
   border-top: 0.5px solid #C8D1DD;
 }
 
 .section__header {
-font-size: 0.9em;
-line-height: 229%;
-color: #1A1B1D;
+  font-size: 0.9em;
+  line-height: 229%;
+  color: #1A1B1D;
 }
 
 .section__description {
   font-size: 0.6em;
-line-height: 156%;
-color: #1A1B1D;
-text-align: justify;
+  line-height: 156%;
+  color: #1A1B1D;
+  text-align: justify;
 }
 
-.section__description-institution {
-  flex: 0 1 147px;
-}
+.section__description-institution { flex: 0 1 147px; }
 
 .section__description span {
   font-size: 0.9em;
-line-height: 150%;
-color: #828B99;
+  line-height: 150%;
+  color: #828B99;
 }
 
 .section__description-dot {
@@ -77,9 +74,7 @@ color: #828B99;
   border-radius: 50px;
 }
 
-.section__description-specialty {
-  flex: 0 1 153px;
-}
+.section__description-specialty { flex: 0 1 153px; }
 
 .section__container {
   display: flex;
@@ -95,13 +90,11 @@ color: #828B99;
 .section__link {
   margin-left: 8px;
   font-size: 0.6em;
-line-height: 267%;
-color: #828B99;
+  line-height: 267%;
+  color: #828B99;
 }
 
-.section__link span {
-  color: #1A1B1D;
-}
+.section__link span { color: #1A1B1D; }
 
 .code__example {
   font-size: 0.6em;
@@ -119,28 +112,20 @@ color: #828B99;
   background: url(./img/avatar.jpg) 50% 95% no-repeat;
 }
 
-.section_right {
+.section__right {
   position: relative;
   margin: 24px auto 0 auto;
   width: 152px;
   border-top: 1px solid #515C6C;
 }
 
-.section_header-right {
-  color: #fff;
-}
+.section__header-right { color: #fff; }
 
-.fa:before {
-color: #EF7C17;
-}
+.fa:before { color: #EF7C17; }
 
-.fa-map-marker:before {
-font-size: 1.4em;
-}
+.fa-map-marker:before { font-size: 1.4em; }
 
-.fa-phone::before {
-  font-size: 1.2em;
-}
+.fa-phone::before { font-size: 1.2em; }
 
 .contact__link {
   padding-left: 10px;
@@ -150,9 +135,7 @@ font-size: 1.4em;
   transition: 500ms;
 }
 
-.contact__link:hover {
-  color: #EF7C17;
-}
+.contact__link:hover { color: #EF7C17; }
 
 .section__container-skill {
   flex: 0 0 30px;
@@ -210,59 +193,26 @@ font-size: 1.4em;
   left: 85px;
 }
 
-.progressbar__circle {
-  margin-top: 4px;
-  background-color: #515C6C;
-  border-radius: 13px;
-}
-
-.progressbar__russian {
-  background: #EF7C17;
-  border-radius: 1px;
-  width: 100%;
-  height: 2px;
-  /* transform: rotate(30deg);  */
-  transform: skew(200deg);
-}
-
-.progressbar__english {
-  background: #EF7C17;
-  border-radius: 1px;
-  width: 100%;
-  height: 2px;
-}
-
-/* .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-} */
+.percent__container{ display: flex; }
 
 .percent {
   position: relative;
-  width: 56px;
+  flex: 0 0 56px;
   height: 56px;
-  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .number {
   position: absolute;
-  top: 10px;
-  left: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+  top: 9px;
+  left: 22%;
+  text-align: center;
 }
 
 .number span {
-font-size: 9px;
-line-height: 16px;
-color: #fff;
-margin: 0 auto;
+  font-size: 9px;
+  line-height: 16px;
+  color: #fff;
 }
 
 svg circle {
@@ -270,17 +220,22 @@ svg circle {
   height: 100%;
   fill: none;
   stroke: #404852;
-  stroke-width: 3;
+  stroke-width: 6;
   stroke-linecap: round;
   transform: translate(5px, 5px);
 }
 
-svg circle:nth-child(2) {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
+.circle__percent { stroke: #EF7C17; }
+
+.circle__percent-russian { stroke-dasharray: 600; }
+
+.circle__percent-english {
+  stroke-dasharray: 100, 500;
+  stroke-dashoffset: 200%;
 }
 
-svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 100) / 100);
-  stroke: #EF7C17;
+.car {
+  position: absolute;
+  left: -185px;
+  margin-top: 20px;
 }
