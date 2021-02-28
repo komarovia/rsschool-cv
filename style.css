@@ -1,0 +1,275 @@
+@font-face {
+font-family: Avenir Next;
+src: url(./fonts/AvenirNext-Regular.ttf);
+}
+
+body {
+  font-family: Avenir Next, sans-serif;
+}
+
+.container__wrapper {
+  max-width: 595px;
+  margin: 0 auto;
+}
+
+.container__main {
+  height: 650px;
+  display: flex;
+}
+
+.column__left { flex: 0 1 395px; }
+
+.column__right {
+  flex: 0 1 200px;
+  background-color: #1C2532;
+  position: relative;
+}
+
+.header {
+  margin-top: 48px;
+  margin-left: 1.563em;
+}
+
+.name {
+  font-size: 2.250em;
+  color: #1A1B1D;
+}
+
+.title {
+  font-size: 0.750em;
+  color: #828B99;
+}
+
+.section {
+  margin: 10px auto 0 auto;
+  width: 345px;
+  border-top: 0.5px solid #C8D1DD;
+}
+
+.section__header {
+  font-size: 0.9em;
+  line-height: 229%;
+  color: #1A1B1D;
+}
+
+.section__description {
+  font-size: 0.6em;
+  line-height: 156%;
+  color: #1A1B1D;
+  text-align: justify;
+}
+
+.section__description-institution { flex: 0 1 147px; }
+
+.section__description span {
+  font-size: 0.9em;
+  line-height: 150%;
+  color: #828B99;
+}
+
+.section__description-dot {
+  flex: 0 1 5px;
+  height: 5px;
+  margin-top: 5px;
+  background: #1A1B1D;
+  border-radius: 50px;
+}
+
+.section__description-specialty { flex: 0 1 153px; }
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__wrapper {
+  flex: 0 1 165px;
+  display: flex;
+  align-items: center;
+}
+
+.section__link {
+  margin-left: 8px;
+  font-size: 0.6em;
+  line-height: 267%;
+  color: #828B99;
+}
+
+.section__link span { color: #1A1B1D; }
+
+.code__example {
+  font-size: 0.6em;
+  line-height: 156%;
+  color: #1A1B1D;
+  background-color: #C8D1DD;
+}
+
+.avatar__container {
+  margin: 32px auto 0 auto;
+  width: 116px;
+}
+
+.avatar__img {
+  border: solid 2px #fff;
+  border-radius: 100px;
+}
+
+.section__right {
+  position: relative;
+  margin: 24px auto 0 auto;
+  width: 152px;
+  border-top: 1px solid #515C6C;
+}
+
+.section__header-right { color: #fff; }
+
+.fa:before { color: #EF7C17; }
+
+.fa-map-marker:before { font-size: 1.4em; }
+
+.fa-phone::before { font-size: 1.2em; }
+
+.contact__link {
+  padding-left: 10px;
+  text-decoration: none;
+  line-height: 178%;
+  color: #fff;
+  transition: 500ms;
+}
+
+.contact__link:hover { color: #EF7C17; }
+
+.section__container-skill {
+  flex: 0 0 30px;
+  height: 14px;
+  border: 0.8px solid #515C6C;
+  border-radius: 8px;
+  font-size: 0.438em;
+  line-height: 200%;
+  text-align: center;
+  color: #fff;
+}
+
+.section__description-right {
+  color: #fff;
+  margin-top: 8px;
+}
+
+.progressbar {
+  margin-top: 4px;
+  background-color: #515C6C;
+  border-radius: 13px;
+}
+
+.progressbar__vscode {
+  background: #EF7C17;
+  border-radius: 1px;
+  width: 100%;
+  height: 2px;
+}
+
+.progressbar__photoshop {
+  background: #EF7C17;
+  border-radius: 1px;
+  width: 50%;
+  height: 2px;
+}
+
+.progressbar__figma {
+  background: #EF7C17;
+  border-radius: 1px;
+  width: 50%;
+  height: 2px;
+}
+
+.progressbar__gulp {
+  background: #EF7C17;
+  border-radius: 1px;
+  width: 80%;
+  height: 2px;
+}
+
+.section__picture {
+  position: absolute;
+  top: 8px;
+  left: 85px;
+}
+
+.percent__container{ display: flex; }
+
+.percent {
+  position: relative;
+  flex: 0 0 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.number {
+  position: absolute;
+  top: 9px;
+  left: 22%;
+  text-align: center;
+}
+
+.number span {
+  font-size: 9px;
+  line-height: 16px;
+  color: #fff;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #404852;
+  stroke-width: 6;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.circle__percent { stroke: #EF7C17; }
+
+.circle__percent-russian { stroke-dasharray: 600; }
+
+.circle__percent-english {
+  stroke-dasharray: 100, 500;
+  stroke-dashoffset: 200%;
+}
+
+.footer {
+  position: relative;
+  max-width: 595px;
+  margin: 0 auto;
+}
+
+.footer__link {
+  display: block;
+  width: 100px;
+  height: 30px;
+  padding-left: 35px;
+  padding-top: 15px;
+}
+
+.footer__info {
+  display: block;
+  font-size: 0.6em;
+  margin-left: 25px;
+padding-top: 5px;
+}
+
+.footer__info-link { color: #1A1B1D; }
+
+.footer__altbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 70px;
+  background-color: #1C2532;
+}
+
+.car {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
