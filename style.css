@@ -7,12 +7,13 @@ body {
   font-family: Avenir Next, sans-serif;
 }
 
-.container { max-width: 100%; }
-
 .container__wrapper {
   max-width: 595px;
-  height: 725px;
   margin: 0 auto;
+}
+
+.container__main {
+  height: 650px;
   display: flex;
 }
 
@@ -105,7 +106,7 @@ body {
 
 .avatar__container {
   margin: 32px auto 0 auto;
-  width: 112px;
+  width: 116px;
 }
 
 .avatar__img {
@@ -235,8 +236,40 @@ svg circle {
   stroke-dashoffset: 200%;
 }
 
+.footer {
+  position: relative;
+  max-width: 595px;
+  margin: 0 auto;
+}
+
+.footer__link {
+  display: block;
+  width: 100px;
+  height: 30px;
+  padding-left: 35px;
+  padding-top: 15px;
+}
+
+.footer__info {
+  display: block;
+  font-size: 0.6em;
+  margin-left: 25px;
+padding-top: 5px;
+}
+
+.footer__info-link { color: #1A1B1D; }
+
+.footer__altbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 70px;
+  background-color: #1C2532;
+}
+
 .car {
   position: absolute;
-  left: -185px;
-  margin-top: 20px;
+  top: 0;
+  right: 20px;
 }
