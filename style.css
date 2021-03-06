@@ -254,17 +254,20 @@ svg circle {
   display: block;
   font-size: 0.6em;
   margin-left: 25px;
-padding-top: 5px;
+  padding-top: 5px;
 }
 
 .footer__info-link { color: #1A1B1D; }
+
+.youtube__link {   padding-left: 55px; }
+
 
 .footer__altbg {
   position: absolute;
   top: 0;
   right: 0;
   width: 200px;
-  height: 70px;
+  height: 83px;
   background-color: #1C2532;
 }
 
