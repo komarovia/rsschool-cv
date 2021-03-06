@@ -250,17 +250,19 @@ svg circle {
   padding-top: 15px;
 }
 
+.youtube__link {
+  display: block;
+  padding-left: 55px;
+  margin-top: 5px;
+}
+
 .footer__info {
   display: block;
   font-size: 0.6em;
   margin-left: 25px;
-  padding-top: 5px;
 }
 
 .footer__info-link { color: #1A1B1D; }
-
-.youtube__link {   padding-left: 55px; }
-
 
 .footer__altbg {
   position: absolute;
@@ -273,6 +275,6 @@ svg circle {
 
 .car {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
 }
